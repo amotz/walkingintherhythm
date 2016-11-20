@@ -22,6 +22,9 @@ class StepsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.AchieveLabel.isHidden = true
+        self.userDefaults.register(defaults: ["goalStepsaDay": 4000])
+        let goalStepsaDay: Int = self.userDefaults.object(forKey: "goalStepsaDay") as! Int
+        self.LeftLabel.text = "\(goalStepsaDay)"
         
         countSteps(from: todaysbeginning())
     }
@@ -33,16 +36,15 @@ class StepsViewController: UIViewController {
                 DispatchQueue.main.async(execute: {
                     if data != nil && error == nil {
                         
-                        self.StepsLabel.text = "\(data!.numberOfSteps)"
+                        let todaysSteps: Int = Int(data!.numberOfSteps)
+                        self.StepsLabel.text = "\(todaysSteps)"
                         
-                        self.userDefaults.register(defaults: ["goalStepsaDay": 4000])
-                        let goalStepsaDay: Int = self.userDefaults.object(forKey: "goalStepsaDay") as! Int
-                        
+                        let goalStepsaDay: Int = Int(self.LeftLabel.text!)!
                         var stepsToGo: Int
-                        if goalStepsaDay <= Int(data!.numberOfSteps) {
+                        if goalStepsaDay <= todaysSteps {
                           stepsToGo = 0
                         } else {
-                          stepsToGo = goalStepsaDay - Int(data!.numberOfSteps)
+                          stepsToGo = goalStepsaDay - todaysSteps
                         }
                         self.LeftLabel.text = "\(stepsToGo)"
                         
