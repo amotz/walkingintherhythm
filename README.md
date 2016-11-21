@@ -1,10 +1,10 @@
 # walkingintherhythm
 
-[![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
+[![Platform](https://img.shields.io/badge/platform-ios%208.0+-lightgrey.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
-[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
+[![Language](https://img.shields.io/badge/language-swift%203-orange.svg?style=flat
 )](https://developer.apple.com/swift)
-[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
+[![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 )](LICENSE)
 
 simple pedometer for iOS
@@ -12,6 +12,8 @@ simple pedometer for iOS
 ## Requirements
 
 - iOS 8.0+
+- Xcode 8
+- Swift 3
 
 ## License
 
