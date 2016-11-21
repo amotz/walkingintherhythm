@@ -30,6 +30,8 @@ class StepsViewController: UIViewController {
     }
     
     func countSteps(from: Date) {
+        let goalStepsaDay: Int = Int(self.LeftLabel.text!)!
+
         myPedometer = CMPedometer()
         myPedometer.startUpdates(from: from, withHandler: { (data, error) -> Void in
             if error==nil {
@@ -39,7 +41,6 @@ class StepsViewController: UIViewController {
                         let todaysSteps: Int = Int(data!.numberOfSteps)
                         self.StepsLabel.text = "\(todaysSteps)"
                         
-                        let goalStepsaDay: Int = Int(self.LeftLabel.text!)!
                         var stepsToGo: Int
                         if goalStepsaDay <= todaysSteps {
                           stepsToGo = 0
