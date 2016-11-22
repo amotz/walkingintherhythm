@@ -26,7 +26,8 @@ class StepsViewController: UIViewController {
         let goalStepsaDay: Int = self.userDefaults.object(forKey: "goalStepsaDay") as! Int
         self.LeftLabel.text = "\(goalStepsaDay)"
         
-        countSteps(from: todaysbeginning())
+        let startOfToday: Date = Calendar(identifier: .gregorian).startOfDay(for: Date())
+        countSteps(from: startOfToday)
     }
     
     func countSteps(from: Date) {
@@ -58,17 +59,6 @@ class StepsViewController: UIViewController {
             }
             
         })
-    }
-    
-    private func todaysbeginning() -> Date {
-        let date = Date()
-        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
-        var beginning = (calendar as NSCalendar).components([.year, .month, .day, .hour, .minute, .second], from: date)
-        beginning.hour = 0
-        beginning.minute = 0
-        beginning.second = 0
-        let today = calendar.date(from: beginning)
-        return today!
     }
 
 }
