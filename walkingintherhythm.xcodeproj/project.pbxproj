@@ -16,6 +16,11 @@
 		F3BE26261D23F8180025273E /* walkingintherhythmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE26251D23F8180025273E /* walkingintherhythmTests.swift */; };
 		F3BE26311D23F8180025273E /* walkingintherhythmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE26301D23F8180025273E /* walkingintherhythmUITests.swift */; };
 		F3BE263F1D2400E30025273E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BE263E1D2400E30025273E /* CoreMotion.framework */; };
+		F3C89D181DE47E4C00A92D84 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C89D171DE47E4C00A92D84 /* NotificationCenter.framework */; };
+		F3C89D1B1DE47E4C00A92D84 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C89D1A1DE47E4C00A92D84 /* TodayViewController.swift */; };
+		F3C89D1E1DE47E4C00A92D84 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C89D1C1DE47E4C00A92D84 /* MainInterface.storyboard */; };
+		F3C89D221DE47E4C00A92D84 /* walkingintherhythmWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F3C89D151DE47E4C00A92D84 /* walkingintherhythmWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3D555031DEC6875002B17ED /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D555021DEC6875002B17ED /* Const.swift */; };
 		F3E18AEE1D7708F800195B46 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E18AED1D7708F800195B46 /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +39,28 @@
 			remoteGlobalIDString = F3BE260C1D23F8180025273E;
 			remoteInfo = walkingintherhythm;
 		};
+		F3C89D201DE47E4C00A92D84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3BE26051D23F8180025273E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3C89D141DE47E4C00A92D84;
+			remoteInfo = walkingintherhythmWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3C89D261DE47E4C00A92D84 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F3C89D221DE47E4C00A92D84 /* walkingintherhythmWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F38B94381D7C551D00A5987C /* GoalStepsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalStepsTableViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +78,14 @@
 		F3BE26301D23F8180025273E /* walkingintherhythmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walkingintherhythmUITests.swift; sourceTree = "<group>"; };
 		F3BE26321D23F8190025273E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3BE263E1D2400E30025273E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		F3C39B321DE93804003FBA8C /* walkingintherhythmWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = walkingintherhythmWidget.entitlements; sourceTree = "<group>"; };
+		F3C89D151DE47E4C00A92D84 /* walkingintherhythmWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = walkingintherhythmWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C89D171DE47E4C00A92D84 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		F3C89D1A1DE47E4C00A92D84 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		F3C89D1D1DE47E4C00A92D84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F3C89D1F1DE47E4C00A92D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D555011DEC6242002B17ED /* walkingintherhythm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = walkingintherhythm.entitlements; sourceTree = "<group>"; };
+		F3D555021DEC6875002B17ED /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Const.swift; path = ../Const.swift; sourceTree = "<group>"; };
 		F3E18AED1D7708F800195B46 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +112,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3C89D121DE47E4C00A92D84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C89D181DE47E4C00A92D84 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,6 +130,8 @@
 				F3BE260F1D23F8180025273E /* walkingintherhythm */,
 				F3BE26241D23F8180025273E /* walkingintherhythmTests */,
 				F3BE262F1D23F8180025273E /* walkingintherhythmUITests */,
+				F3C89D191DE47E4C00A92D84 /* walkingintherhythmWidget */,
+				F3C89D161DE47E4C00A92D84 /* Frameworks */,
 				F3BE260E1D23F8180025273E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +142,7 @@
 				F3BE260D1D23F8180025273E /* walkingintherhythm.app */,
 				F3BE26211D23F8180025273E /* walkingintherhythmTests.xctest */,
 				F3BE262C1D23F8180025273E /* walkingintherhythmUITests.xctest */,
+				F3C89D151DE47E4C00A92D84 /* walkingintherhythmWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,7 +150,9 @@
 		F3BE260F1D23F8180025273E /* walkingintherhythm */ = {
 			isa = PBXGroup;
 			children = (
+				F3D555011DEC6242002B17ED /* walkingintherhythm.entitlements */,
 				F3BE26101D23F8180025273E /* AppDelegate.swift */,
+				F3D555021DEC6875002B17ED /* Const.swift */,
 				F3BE26121D23F8180025273E /* StepsViewController.swift */,
 				F3E18AED1D7708F800195B46 /* SettingsTableViewController.swift */,
 				F38B94381D7C551D00A5987C /* GoalStepsTableViewController.swift */,
@@ -135,6 +182,25 @@
 			path = walkingintherhythmUITests;
 			sourceTree = "<group>";
 		};
+		F3C89D161DE47E4C00A92D84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3C89D171DE47E4C00A92D84 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3C89D191DE47E4C00A92D84 /* walkingintherhythmWidget */ = {
+			isa = PBXGroup;
+			children = (
+				F3C39B321DE93804003FBA8C /* walkingintherhythmWidget.entitlements */,
+				F3C89D1A1DE47E4C00A92D84 /* TodayViewController.swift */,
+				F3C89D1C1DE47E4C00A92D84 /* MainInterface.storyboard */,
+				F3C89D1F1DE47E4C00A92D84 /* Info.plist */,
+			);
+			path = walkingintherhythmWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,10 +211,12 @@
 				F3BE26091D23F8180025273E /* Sources */,
 				F3BE260A1D23F8180025273E /* Frameworks */,
 				F3BE260B1D23F8180025273E /* Resources */,
+				F3C89D261DE47E4C00A92D84 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F3C89D211DE47E4C00A92D84 /* PBXTargetDependency */,
 			);
 			name = walkingintherhythm;
 			productName = walkingintherhythm;
@@ -191,13 +259,30 @@
 			productReference = F3BE262C1D23F8180025273E /* walkingintherhythmUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		F3C89D141DE47E4C00A92D84 /* walkingintherhythmWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3C89D251DE47E4C00A92D84 /* Build configuration list for PBXNativeTarget "walkingintherhythmWidget" */;
+			buildPhases = (
+				F3C89D111DE47E4C00A92D84 /* Sources */,
+				F3C89D121DE47E4C00A92D84 /* Frameworks */,
+				F3C89D131DE47E4C00A92D84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = walkingintherhythmWidget;
+			productName = walkingintherhythmWidget;
+			productReference = F3C89D151DE47E4C00A92D84 /* walkingintherhythmWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		F3BE26051D23F8180025273E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = amotz;
 				TargetAttributes = {
@@ -205,6 +290,11 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = U2D56V4SW4;
 						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					F3BE26201D23F8180025273E = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -215,6 +305,16 @@
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0800;
 						TestTargetID = F3BE260C1D23F8180025273E;
+					};
+					F3C89D141DE47E4C00A92D84 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = U2D56V4SW4;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -234,6 +334,7 @@
 				F3BE260C1D23F8180025273E /* walkingintherhythm */,
 				F3BE26201D23F8180025273E /* walkingintherhythmTests */,
 				F3BE262B1D23F8180025273E /* walkingintherhythmUITests */,
+				F3C89D141DE47E4C00A92D84 /* walkingintherhythmWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -263,6 +364,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3C89D131DE47E4C00A92D84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C89D1E1DE47E4C00A92D84 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -274,6 +383,7 @@
 				F3BE26131D23F8180025273E /* StepsViewController.swift in Sources */,
 				F3E18AEE1D7708F800195B46 /* SettingsTableViewController.swift in Sources */,
 				F3BE26111D23F8180025273E /* AppDelegate.swift in Sources */,
+				F3D555031DEC6875002B17ED /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +403,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3C89D111DE47E4C00A92D84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C89D1B1DE47E4C00A92D84 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -305,6 +423,11 @@
 			isa = PBXTargetDependency;
 			target = F3BE260C1D23F8180025273E /* walkingintherhythm */;
 			targetProxy = F3BE262D1D23F8180025273E /* PBXContainerItemProxy */;
+		};
+		F3C89D211DE47E4C00A92D84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3C89D141DE47E4C00A92D84 /* walkingintherhythmWidget */;
+			targetProxy = F3C89D201DE47E4C00A92D84 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -323,6 +446,14 @@
 				F3BE261A1D23F8180025273E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F3C89D1C1DE47E4C00A92D84 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3C89D1D1DE47E4C00A92D84 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -419,7 +550,9 @@
 		F3BE26361D23F8190025273E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = walkingintherhythm/walkingintherhythm.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = walkingintherhythm/Info.plist;
@@ -434,7 +567,9 @@
 		F3BE26371D23F8190025273E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = walkingintherhythm/walkingintherhythm.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = walkingintherhythm/Info.plist;
@@ -496,6 +631,43 @@
 			};
 			name = Release;
 		};
+		F3C89D231DE47E4C00A92D84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = walkingintherhythmWidget/walkingintherhythmWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U2D56V4SW4;
+				INFOPLIST_FILE = walkingintherhythmWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.amotzbeats.walkingintherhythm.walkingintherhythmWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F3C89D241DE47E4C00A92D84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = walkingintherhythmWidget/walkingintherhythmWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U2D56V4SW4;
+				INFOPLIST_FILE = walkingintherhythmWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.amotzbeats.walkingintherhythm.walkingintherhythmWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -531,6 +703,15 @@
 			buildConfigurations = (
 				F3BE263C1D23F8190025273E /* Debug */,
 				F3BE263D1D23F8190025273E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3C89D251DE47E4C00A92D84 /* Build configuration list for PBXNativeTarget "walkingintherhythmWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3C89D231DE47E4C00A92D84 /* Debug */,
+				F3C89D241DE47E4C00A92D84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

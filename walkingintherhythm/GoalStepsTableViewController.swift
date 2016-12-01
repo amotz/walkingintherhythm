@@ -11,11 +11,11 @@ import UIKit
 class GoalStepsTableViewController: UITableViewController {
     
     // MARK: Properties
-    var goalStepsaDay: Int = 0
-    let userDefaults = UserDefaults.standard
-    
+    let userDefaults: UserDefaults = UserDefaults(suiteName: Const().suiteName)!
     let cellLabels = ["4000", "5000", "7000", "8000"]
+ 
     var checkMarks = [false, false, false, false]
+    var goalStepsaDay: Int = 0
     
     override func viewDidLoad() {
         userDefaults.register(defaults: ["goalStepsaDay": 4000])

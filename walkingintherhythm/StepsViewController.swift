@@ -12,12 +12,12 @@ import CoreMotion
 class StepsViewController: UIViewController {
 
     // MARK: Properties
-    var myPedometer: CMPedometer!
-    let userDefaults = UserDefaults.standard
-
     @IBOutlet weak var StepsLabel: UILabel!
     @IBOutlet weak var LeftLabel: UILabel!
     @IBOutlet weak var AchieveLabel: UILabel!
+    
+    let userDefaults: UserDefaults = UserDefaults(suiteName: Const().suiteName)!
+    var myPedometer: CMPedometer!
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
