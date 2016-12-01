@@ -13,8 +13,6 @@
 		F3BE26161D23F8180025273E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3BE26141D23F8180025273E /* Main.storyboard */; };
 		F3BE26181D23F8180025273E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3BE26171D23F8180025273E /* Assets.xcassets */; };
 		F3BE261B1D23F8180025273E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3BE26191D23F8180025273E /* LaunchScreen.storyboard */; };
-		F3BE26261D23F8180025273E /* walkingintherhythmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE26251D23F8180025273E /* walkingintherhythmTests.swift */; };
-		F3BE26311D23F8180025273E /* walkingintherhythmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BE26301D23F8180025273E /* walkingintherhythmUITests.swift */; };
 		F3BE263F1D2400E30025273E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3BE263E1D2400E30025273E /* CoreMotion.framework */; };
 		F3C89D181DE47E4C00A92D84 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C89D171DE47E4C00A92D84 /* NotificationCenter.framework */; };
 		F3C89D1B1DE47E4C00A92D84 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C89D1A1DE47E4C00A92D84 /* TodayViewController.swift */; };
@@ -72,11 +70,7 @@
 		F3BE261A1D23F8180025273E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3BE261C1D23F8180025273E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3BE26211D23F8180025273E /* walkingintherhythmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = walkingintherhythmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3BE26251D23F8180025273E /* walkingintherhythmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walkingintherhythmTests.swift; sourceTree = "<group>"; };
-		F3BE26271D23F8180025273E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3BE262C1D23F8180025273E /* walkingintherhythmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = walkingintherhythmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3BE26301D23F8180025273E /* walkingintherhythmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walkingintherhythmUITests.swift; sourceTree = "<group>"; };
-		F3BE26321D23F8190025273E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3BE263E1D2400E30025273E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		F3C39B321DE93804003FBA8C /* walkingintherhythmWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = walkingintherhythmWidget.entitlements; sourceTree = "<group>"; };
 		F3C89D151DE47E4C00A92D84 /* walkingintherhythmWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = walkingintherhythmWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,8 +122,6 @@
 			children = (
 				F3BE263E1D2400E30025273E /* CoreMotion.framework */,
 				F3BE260F1D23F8180025273E /* walkingintherhythm */,
-				F3BE26241D23F8180025273E /* walkingintherhythmTests */,
-				F3BE262F1D23F8180025273E /* walkingintherhythmUITests */,
 				F3C89D191DE47E4C00A92D84 /* walkingintherhythmWidget */,
 				F3C89D161DE47E4C00A92D84 /* Frameworks */,
 				F3BE260E1D23F8180025273E /* Products */,
@@ -162,24 +154,6 @@
 				F3BE261C1D23F8180025273E /* Info.plist */,
 			);
 			path = walkingintherhythm;
-			sourceTree = "<group>";
-		};
-		F3BE26241D23F8180025273E /* walkingintherhythmTests */ = {
-			isa = PBXGroup;
-			children = (
-				F3BE26251D23F8180025273E /* walkingintherhythmTests.swift */,
-				F3BE26271D23F8180025273E /* Info.plist */,
-			);
-			path = walkingintherhythmTests;
-			sourceTree = "<group>";
-		};
-		F3BE262F1D23F8180025273E /* walkingintherhythmUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F3BE26301D23F8180025273E /* walkingintherhythmUITests.swift */,
-				F3BE26321D23F8190025273E /* Info.plist */,
-			);
-			path = walkingintherhythmUITests;
 			sourceTree = "<group>";
 		};
 		F3C89D161DE47E4C00A92D84 /* Frameworks */ = {
@@ -391,7 +365,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3BE26261D23F8180025273E /* walkingintherhythmTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +372,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3BE26311D23F8180025273E /* walkingintherhythmUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
