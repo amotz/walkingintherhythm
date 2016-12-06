@@ -54,11 +54,9 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                         self.LeftLabel.text = "\(stepsToGo) steps left"
                         
                         if stepsToGo==0 {
-                            self.StatusLabel.text = "♥"
-                            self.StepsLabel.textColor = UIColor(red:240.0,green:98.0,blue:146.0,alpha:1.0)
+                            self.StatusLabel.text = "😊"
                         } else {
                             self.StatusLabel.text = "💪"
-                            self.StepsLabel.textColor = UIColor.black
                         }
                     }
                 }
