@@ -16,8 +16,8 @@ class StepsViewController: UIViewController {
     @IBOutlet weak var LeftLabel: UILabel!
     @IBOutlet weak var AchieveLabel: UILabel!
     
-    let userDefaults: UserDefaults = UserDefaults(suiteName: Const().suiteName)!
-    var myPedometer: CMPedometer!
+    @objc let userDefaults: UserDefaults = UserDefaults(suiteName: Const().suiteName)!
+    @objc var myPedometer: CMPedometer!
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
@@ -30,7 +30,7 @@ class StepsViewController: UIViewController {
         countSteps(from: startOfToday)
     }
     
-    func countSteps(from: Date) {
+    @objc func countSteps(from: Date) {
         let goalStepsaDay: Int = Int(self.LeftLabel.text!)!
 
         myPedometer = CMPedometer()
@@ -39,7 +39,7 @@ class StepsViewController: UIViewController {
                 DispatchQueue.main.async(execute: {
                     if data != nil && error == nil {
                         
-                        let todaysSteps: Int = Int(data!.numberOfSteps)
+                        let todaysSteps: Int = Int(truncating: data!.numberOfSteps)
                         self.StepsLabel.text = "\(todaysSteps)"
                         
                         var stepsToGo: Int

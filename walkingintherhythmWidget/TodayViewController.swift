@@ -17,8 +17,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var StepsLabel: UILabel!
     @IBOutlet weak var LeftLabel: UILabel!
 
-    let userDefaults: UserDefaults = UserDefaults(suiteName: "group.com.amotzbeats.walkingintherhythm")!
-    let myPedometer: CMPedometer = {
+    @objc let userDefaults: UserDefaults = UserDefaults(suiteName: "group.com.amotzbeats.walkingintherhythm")!
+    @objc let myPedometer: CMPedometer = {
         return CMPedometer()
     }()
     
@@ -29,7 +29,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         countSteps(from: startOfToday)
     }
     
-    func countSteps(from: Date) {
+    @objc func countSteps(from: Date) {
         guard CMPedometer.isStepCountingAvailable() else {
             return
         }
@@ -42,7 +42,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 if data != nil && error == nil {
                     
                     DispatchQueue.main.async {
-                        let todaysSteps: Int = Int(Int(data!.numberOfSteps))
+                        let todaysSteps: Int = Int(Int(truncating: data!.numberOfSteps))
                         self.StepsLabel.text = "\(todaysSteps) steps"
                         
                         var stepsToGo: Int

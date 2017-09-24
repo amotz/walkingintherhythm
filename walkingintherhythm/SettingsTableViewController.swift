@@ -13,7 +13,7 @@ class SettingsTableViewController: UITableViewController {
     // MARK: Properties
     @IBOutlet weak var GoalStepsLabel: UILabel!
 
-    let userDefaults: UserDefaults = UserDefaults(suiteName: Const().suiteName)!
+    @objc let userDefaults: UserDefaults = UserDefaults(suiteName: Const().suiteName)!
 
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: false)

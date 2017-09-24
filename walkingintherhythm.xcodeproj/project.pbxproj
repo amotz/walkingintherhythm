@@ -23,20 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F3BE26221D23F8180025273E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3BE26051D23F8180025273E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F3BE260C1D23F8180025273E;
-			remoteInfo = walkingintherhythm;
-		};
-		F3BE262D1D23F8180025273E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F3BE26051D23F8180025273E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F3BE260C1D23F8180025273E;
-			remoteInfo = walkingintherhythm;
-		};
 		F3C89D201DE47E4C00A92D84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F3BE26051D23F8180025273E /* Project object */;
@@ -69,8 +55,6 @@
 		F3BE26171D23F8180025273E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3BE261A1D23F8180025273E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3BE261C1D23F8180025273E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3BE26211D23F8180025273E /* walkingintherhythmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = walkingintherhythmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3BE262C1D23F8180025273E /* walkingintherhythmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = walkingintherhythmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3BE263E1D2400E30025273E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		F3C39B321DE93804003FBA8C /* walkingintherhythmWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = walkingintherhythmWidget.entitlements; sourceTree = "<group>"; };
 		F3C89D151DE47E4C00A92D84 /* walkingintherhythmWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = walkingintherhythmWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,20 +73,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3BE263F1D2400E30025273E /* CoreMotion.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3BE261E1D23F8180025273E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3BE26291D23F8180025273E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,8 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				F3BE260D1D23F8180025273E /* walkingintherhythm.app */,
-				F3BE26211D23F8180025273E /* walkingintherhythmTests.xctest */,
-				F3BE262C1D23F8180025273E /* walkingintherhythmUITests.xctest */,
 				F3C89D151DE47E4C00A92D84 /* walkingintherhythmWidget.appex */,
 			);
 			name = Products;
@@ -197,42 +165,6 @@
 			productReference = F3BE260D1D23F8180025273E /* walkingintherhythm.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F3BE26201D23F8180025273E /* walkingintherhythmTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F3BE26381D23F8190025273E /* Build configuration list for PBXNativeTarget "walkingintherhythmTests" */;
-			buildPhases = (
-				F3BE261D1D23F8180025273E /* Sources */,
-				F3BE261E1D23F8180025273E /* Frameworks */,
-				F3BE261F1D23F8180025273E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F3BE26231D23F8180025273E /* PBXTargetDependency */,
-			);
-			name = walkingintherhythmTests;
-			productName = walkingintherhythmTests;
-			productReference = F3BE26211D23F8180025273E /* walkingintherhythmTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F3BE262B1D23F8180025273E /* walkingintherhythmUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F3BE263B1D23F8190025273E /* Build configuration list for PBXNativeTarget "walkingintherhythmUITests" */;
-			buildPhases = (
-				F3BE26281D23F8180025273E /* Sources */,
-				F3BE26291D23F8180025273E /* Frameworks */,
-				F3BE262A1D23F8180025273E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F3BE262E1D23F8180025273E /* PBXTargetDependency */,
-			);
-			name = walkingintherhythmUITests;
-			productName = walkingintherhythmUITests;
-			productReference = F3BE262C1D23F8180025273E /* walkingintherhythmUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		F3C89D141DE47E4C00A92D84 /* walkingintherhythmWidget */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3C89D251DE47E4C00A92D84 /* Build configuration list for PBXNativeTarget "walkingintherhythmWidget" */;
@@ -257,32 +189,23 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = amotz;
 				TargetAttributes = {
 					F3BE260C1D23F8180025273E = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = U2D56V4SW4;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
 							};
 						};
 					};
-					F3BE26201D23F8180025273E = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
-						TestTargetID = F3BE260C1D23F8180025273E;
-					};
-					F3BE262B1D23F8180025273E = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
-						TestTargetID = F3BE260C1D23F8180025273E;
-					};
 					F3C89D141DE47E4C00A92D84 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = U2D56V4SW4;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -306,8 +229,6 @@
 			projectRoot = "";
 			targets = (
 				F3BE260C1D23F8180025273E /* walkingintherhythm */,
-				F3BE26201D23F8180025273E /* walkingintherhythmTests */,
-				F3BE262B1D23F8180025273E /* walkingintherhythmUITests */,
 				F3C89D141DE47E4C00A92D84 /* walkingintherhythmWidget */,
 			);
 		};
@@ -321,20 +242,6 @@
 				F3BE261B1D23F8180025273E /* LaunchScreen.storyboard in Resources */,
 				F3BE26181D23F8180025273E /* Assets.xcassets in Resources */,
 				F3BE26161D23F8180025273E /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3BE261F1D23F8180025273E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3BE262A1D23F8180025273E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,20 +268,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3BE261D1D23F8180025273E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3BE26281D23F8180025273E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F3C89D111DE47E4C00A92D84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,16 +279,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F3BE26231D23F8180025273E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F3BE260C1D23F8180025273E /* walkingintherhythm */;
-			targetProxy = F3BE26221D23F8180025273E /* PBXContainerItemProxy */;
-		};
-		F3BE262E1D23F8180025273E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F3BE260C1D23F8180025273E /* walkingintherhythm */;
-			targetProxy = F3BE262D1D23F8180025273E /* PBXContainerItemProxy */;
-		};
 		F3C89D211DE47E4C00A92D84 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F3C89D141DE47E4C00A92D84 /* walkingintherhythmWidget */;
@@ -440,14 +323,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -487,14 +376,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -527,12 +422,13 @@
 				CODE_SIGN_ENTITLEMENTS = walkingintherhythm/walkingintherhythm.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U2D56V4SW4;
 				INFOPLIST_FILE = walkingintherhythm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.amotzbeats.walkingintherhythm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -544,62 +440,13 @@
 				CODE_SIGN_ENTITLEMENTS = walkingintherhythm/walkingintherhythm.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = U2D56V4SW4;
 				INFOPLIST_FILE = walkingintherhythm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.amotzbeats.walkingintherhythm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		F3BE26391D23F8190025273E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = walkingintherhythmTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.amotzbeats.walkingintherhythmTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/walkingintherhythm.app/walkingintherhythm";
-			};
-			name = Debug;
-		};
-		F3BE263A1D23F8190025273E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = walkingintherhythmTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.amotzbeats.walkingintherhythmTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/walkingintherhythm.app/walkingintherhythm";
-			};
-			name = Release;
-		};
-		F3BE263C1D23F8190025273E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = walkingintherhythmUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.amotzbeats.walkingintherhythmUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = walkingintherhythm;
-			};
-			name = Debug;
-		};
-		F3BE263D1D23F8190025273E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = walkingintherhythmUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.amotzbeats.walkingintherhythmUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = walkingintherhythm;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -618,7 +465,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -636,7 +483,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.amotzbeats.walkingintherhythm.walkingintherhythmWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -657,24 +504,6 @@
 			buildConfigurations = (
 				F3BE26361D23F8190025273E /* Debug */,
 				F3BE26371D23F8190025273E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F3BE26381D23F8190025273E /* Build configuration list for PBXNativeTarget "walkingintherhythmTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F3BE26391D23F8190025273E /* Debug */,
-				F3BE263A1D23F8190025273E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F3BE263B1D23F8190025273E /* Build configuration list for PBXNativeTarget "walkingintherhythmUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F3BE263C1D23F8190025273E /* Debug */,
-				F3BE263D1D23F8190025273E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
